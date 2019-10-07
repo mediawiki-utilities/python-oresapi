@@ -1,0 +1,7 @@
+__name__ = "oresapi"
+__version__ = "0.0.1"
+__author__ = "Aaron Halfaker"
+__author_email__ = "ahalfaker@wikimedia.org"
+__description__ = "A set of utilities for efficiently querying the ORES api."
+__url__ = "https://github.com/halfak/oresapi"
+__license__ = "MIT"
