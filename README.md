@@ -3,11 +3,17 @@
 This repo contains a python package called "oresapi".  This package makes it
 straightforward to query the ORES API in a performant way.  
 
+# Installation
+
+```
+$ pip install oresapi
+```
+
 # Examples
 
 ## CLI
 ```
-$ echo -e '{"rev_id": 123456}\n{"rev_id": 234567}' | ./utility score_revisions https://ores.wikimedia.org "example@email.org" enwiki damaging goodfaith 
+$ echo -e '{"rev_id": 123456}\n{"rev_id": 234567}' | oresapi score_revisions https://ores.wikimedia.org "example@email.org" enwiki damaging goodfaith 
 2020-04-23 09:58:18,547 INFO:oresapi.utilities.score_revisions -- Reading input from <stdin>
 2020-04-23 09:58:18,547 INFO:oresapi.utilities.score_revisions -- Writing output to from <stdout>
 {"score": {"damaging": {"score": {"probability": {"false": 0.8895027179951033, "true": 0.11049728200489672}, "prediction": false}}, "goodfaith": {"score": {"probability": {"false": 0.0379063620644855, "true": 0.9620936379355145}, "prediction": true}}}, "rev_id": 123456}
