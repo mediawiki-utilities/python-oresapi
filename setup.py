@@ -42,6 +42,11 @@ setup(
     description=__description__,  # noqa
     url=__url__,  # noqa
     license=__license__,  # noqa
+    entry_points={
+        'console_scripts': [
+            'oresapi = oresapi.oresapi:main',
+        ],
+    },
     packages=find_packages(),
     include_package_data=True,
     long_description=read('README.md'),
